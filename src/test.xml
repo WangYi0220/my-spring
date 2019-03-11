@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans>
+	<!-- 扫描方式 -->
+	<!-- <scanner base-package="com.wy.entitys"/> -->
+	<!-- xml配置方式-->
+	<bean id="money" class="com.wy.entitys.Money">
+		<property name="account" value="123"/>
+		<property name="balance" value="33.3"/>
+	</bean>
+	
+	<bean id="user" class="com.wy.entitys.User">
+		<property name="name" value="王毅"/>
+		<property name="id" value="1"/>
+		<property name="flag" value="true"/>
+		<property name="money" ref="money"></property>
+	</bean>  
+	
+</beans>
